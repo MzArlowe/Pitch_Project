@@ -17,6 +17,7 @@ const UserModel = db.define("user", {
     password: {
         type: DataTypes.STRING(1000),
         allowNull: false,
+        unique : true
     },
     isFounder: {
         type: DataTypes.BOOLEAN,
